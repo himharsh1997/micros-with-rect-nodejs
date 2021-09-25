@@ -1,0 +1,9 @@
+# big node modules folder to ignore
+posts/node_modules
+comments/node_modules
+blog-web/node_modules
+
+# lock files
+posts/package-lock.json
+comments/package-lock.json
+blog-web/package-lock.json
