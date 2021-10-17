@@ -1,10 +1,12 @@
 const express = require('express');
-const {randomBytes } = require('crypto');
+const { randomBytes } = require('crypto');
+const cors =  require('cors');
 const app = express();
 
 app.use(express.json());
+app.use(cors({origin: ['http://localhost:3000']}));
 
-const posts = {};
+const posts = {};http://localhost:3000/
 
 app.get('/posts', (req, res) => {
     res.send(posts);
